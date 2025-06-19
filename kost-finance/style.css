@@ -1,0 +1,208 @@
+/* General Layout */
+body {
+  font-family: 'Poppins', sans-serif;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff8f0;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  color: #333;
+}
+
+/* Navbar estetik horizontal */
+.navbar {
+  background-color: #ff7f50; /* oranye coral */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-size: 22px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand i {
+  margin-right: 8px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.2s;
+}
+
+.navbar-menu li a:hover {
+  text-decoration: underline;
+  color: #f0f0f0;
+}
+
+
+h1, h2, h3 {
+  text-align: center;
+  color: #222;
+  font-weight: 600;
+}
+
+h1 {
+  margin-bottom: 4px;
+}
+
+h3 {
+  margin-top: 0; }
+
+h1 {
+  font-size: 2.4em;
+}
+
+h3 {
+  color: #f39200;
+}
+
+/* Form Style */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  transition: border 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #f39200;
+  outline: none;
+}
+
+button {
+  padding: 12px;
+  background-color: #f39200;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #dd7d00;
+}
+
+/* Export Button */
+.export-btn, .btn-export {
+  background-color: #ff6600;
+  padding: 10px 16px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.export-btn:hover, .btn-export:hover {
+  background-color: #cc5500;
+}
+
+/* List Transaksi */
+ul.transaksi-list {
+  list-style: none;
+  padding: 0;
+}
+
+.transaksi-item {
+  background: white;
+  margin-bottom: 15px;
+  padding: 16px;
+  border-left: 6px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.04);
+}
+
+.transaksi-item.plus {
+  border-left-color: #28a745;
+  color: #28a745;
+}
+
+.transaksi-item.minus {
+  border-left-color: #dc3545;
+  color: #dc3545;
+}
+
+.transaksi-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.transaksi-icon {
+  width: 28px;
+  height: 28px;
+}
+
+/* Aksi */
+.transaksi-aksi a {
+  margin-left: 10px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.transaksi-aksi a.edit {
+  color: #007bff;
+}
+
+.transaksi-aksi a.edit:hover {
+  color: #0056b3;
+}
+
+.transaksi-aksi a:hover {
+  color: #dc3545;
+}
+
+/* Label di atas */
+.transaksi-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #999;
+  margin-bottom: 4px;
+}
+
+/* Chart */
+canvas {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+}
